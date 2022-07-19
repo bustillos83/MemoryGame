@@ -7,6 +7,7 @@
 //when player selects wrong images aler theyre wrong and to try again
 //alert when wrong and ask to start again
 //goal to add music
+//goal to add sound when click card
 
 //Array of cards, two of each so it compares them to match
 

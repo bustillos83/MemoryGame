@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link rel="stylesheet" href="css/style.css"/>
-        <script src="js/app.js" defer></script>
-    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <title>Saint Seiya Memory Game</title>
 </head>
+
 <body>
-    <audio id="audio" controls autoplay loop>
-        <source src="assets/Pegasus.mp3"></audio>
-        
-    <h1>Saint Seiya Memory Game</h1>
-    <div class="container">
-        <div class="data">
-          <div class="score">Score: <span class="scoreBoard">0</span></div>
-          <div class="click">Moves: <span class="clickBoard">0</span></div>
+    <div id="wrapper">
+        <div id="ad">
+            <div id="adleft"></div>
+            <div id="adright"></div>
+      
+
         </div>
-        <div class="grid">
-          <div class="popup">
-            <button class="playAgain">play Again</button>
-          </div>
+        <h1>Saint Seiya Memory Game</h1>
+        <p>Elevate your Cosmos</p>
+        <div class="container">
+            <div class="data">
+                <div class="score">Score: <span class="scoreBoard">0</span></div>
+                <div class="click">Moves: <span class="clickBoard">0</span></div>
+            </div>
+            <div class="grid">
+                <div class="popup">
+                    <button class="playAgain">Play Again?</button>
+                </div>
+            </div>
         </div>
-        <div class="audio">
-          <audio controls>
-            <source=src"https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mpeg" id="source">
-            </source>
-          </audio>
-        </div>
-      </div>
+    </div>
+    <footer>
+        <div class="audioContainer">
+            <audio controls loop>
+                <source src="assets/Pegasus.mp3"></audio>
+    </footer>
 </body>
+
 </html>
