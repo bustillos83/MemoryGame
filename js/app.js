@@ -65,8 +65,8 @@ let cardArray = [
 //define variables and get DOM element
 //using DOMContentLoaded so it load HTML without waiting for images and such
 let grid = document.querySelector(".grid");
-let audio = document.querySelector("audio");
-let source = document.querySelector("#source");
+//let audio = document.querySelector("audio");
+//let source = document.querySelector("#source");
 let scoreBoard = document.querySelector(".scoreBoard");
 let popup = document.querySelector(".popup");
 let playAgain = document.querySelector(".playAgain");
@@ -167,12 +167,15 @@ function checkWon() {
 //resets moves and score.
 
 function replay() {
-  arrangeCard();
-  grid.innerHTML = "";
-  createBoard(grid, cardArray);
-  cardsWon = 0;
-  clicks = 0;
-  clickBoard.innerHTML = 0;
-  scoreBoard.innerHTML = 0;
-  popup.style.display = "none";
+  location.reload(
+    "/Users/fernando/Desktop/sei-cosmos/projects/project-1/MemoryGame/index.html"
+  );
+  // arrangeCard();
+  // grid.innerHTML = "";
+  // createBoard(grid, cardArray);
+  // cardsWon = 0;
+  // clicks = 0;
+  // clickBoard.innerHTML = 0;
+  // scoreBoard.innerHTML = 0;
+  // popup.style.display = "none";
 }
