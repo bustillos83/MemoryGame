@@ -32,6 +32,7 @@
 body {
   font-family: 'saint_pegasusregular';
   min-width: 850px;
+  
 
 }
 
@@ -50,6 +51,16 @@ p{
   right:650px;
   font-size: 35px;
   color: rgb(247, 255, 2);
+}
+
+.player{
+  display: flex;
+  justify-content:center;
+  font-size: 35px;
+  color:white;
+}
+span{
+  color:rgb(227, 161, 20);
 }
 
 html {
@@ -113,3 +124,4 @@ html {
   color: rgb(218, 65, 23);
   font-size: 30px;
 }
+

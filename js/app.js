@@ -80,6 +80,13 @@ document.addEventListener("DOMContentLoaded", function () {
   //board function
   //creates board with the images
 
+  let playerName = prompt("Enter your name");
+  document.getElementById("name").innerHTML = playerName;
+  // Swal.fire({
+  //   title: "Enter name",
+  //   input: "text",
+  // });
+
   createBoard(grid, cardArray);
   arrangeCard();
   playAgain.addEventListener("click", replay);
@@ -137,7 +144,18 @@ function checkForMatch() {
   let firstCard = cardsId[0];
   let secondCard = cardsId[1];
   if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) {
-    alert("You found a match");
+    Swal.fire({
+      //icon: "success",
+      title: "Great!",
+      text: "You found a match!",
+      color: "black",
+      background: "white",
+      position: "center",
+      imageUrl: "https://i.imgur.com/12bl3iE.jpg",
+      imageWidth: 500,
+      imageHeight: 350,
+    });
+    //alert("You found a match");
 
     cardsWon += 1;
     scoreBoard.innerHTML = cardsWon;
@@ -145,7 +163,18 @@ function checkForMatch() {
   } else {
     imgs[firstCard].setAttribute("src", "https://i.imgur.com/7rhDR2Q.jpg");
     imgs[secondCard].setAttribute("src", "https://i.imgur.com/7rhDR2Q.jpg");
-    alert("wrong, try again");
+    Swal.fire({
+      //icon: "error",
+      title: "Wrong!",
+      text: "Try again!",
+      color: "black",
+      background: "white",
+      position: "center",
+      imageUrl: "https://i.imgur.com/ICLj6mY.png",
+      imageWidth: 500,
+      imageHeight: 350,
+    });
+    //alert("wrong, try again");
     imgs[firstCard].classList.remove("flip");
     imgs[secondCard].classList.remove("flip");
   }
@@ -157,14 +186,20 @@ function checkForMatch() {
 
 function checkWon() {
   if (cardsWon == cardArray.length / 2) {
-    alert("You win!");
-    setTimeout(() => (popup.style.display = "flex"), 300);
+    Swal.fire({
+      title: "Cosmos Elavated!",
+      text: "Awesome you win!",
+      imageUrl: "https://i.imgur.com/fVAwdU7.jpg",
+      imageWidth: 500,
+      imageHeight: 350,
+    });
+    //alert("You win!");
+    setTimeout(() => (popup.style.display = "flex"), 600);
   }
 }
 // function to replay game.
 //function to alert the player if they want to restart the game.
-//rearranges the array again, empties the game board
-//resets moves and score.
+//this reload the page again to start a new game
 
 function replay() {
   location.reload(
