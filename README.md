@@ -16,3 +16,10 @@
 
 
 <img width="1104" alt="Memory Game (1)" src="https://user-images.githubusercontent.com/105611825/180607809-d0c78541-43d5-4013-beb1-acf091f71435.png">
+
+
+## Finshed game layout
+
+### This is the final look of the game.
+
+![Screen Shot 2022-07-23 at 9 55 33 AM](https://user-images.githubusercontent.com/105611825/180608219-834784c8-46b4-4c5b-9abf-084f25f24c9a.png)
