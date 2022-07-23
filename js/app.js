@@ -205,12 +205,4 @@ function replay() {
   location.reload(
     "/Users/fernando/Desktop/sei-cosmos/projects/project-1/MemoryGame/index.html"
   );
-  // arrangeCard();
-  // grid.innerHTML = "";
-  // createBoard(grid, cardArray);
-  // cardsWon = 0;
-  // clicks = 0;
-  // clickBoard.innerHTML = 0;
-  // scoreBoard.innerHTML = 0;
-  // popup.style.display = "none";
 }
