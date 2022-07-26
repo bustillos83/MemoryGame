@@ -76,16 +76,13 @@ let cardsId = [];
 let cardsSelected = [];
 let cardsWon = 0;
 let clicks = 0;
+
 document.addEventListener("DOMContentLoaded", function () {
   //board function
   //creates board with the images
 
   let playerName = prompt("Enter your name");
   document.getElementById("name").innerHTML = playerName;
-  // Swal.fire({
-  //   title: "Enter name",
-  //   input: "text",
-  // });
 
   createBoard(grid, cardArray);
   arrangeCard();
